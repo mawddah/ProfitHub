@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+
 st.set_page_config(page_title="Profit Hub", page_icon=":tada:", layout="wide")
 st.title('Profit Hub :wave:')
 
@@ -40,7 +41,7 @@ with tab1:
     st.write("##")
     image_column, text_column = st.columns((1,2))
     with image_column:
-        st.image(imge5)
+        st.image(imge2)
         with text_column:
             st.subheader("متجر روشيه")
             st.write(
@@ -59,11 +60,12 @@ with tab1:
 صناعه منزليه للمخبوزات بمختلف الانواع . 
 
 """)
-    
-    
-    
+    def unauthenticated_menu():
+        st.page_link("profit-2.py", label="Home", icon="🏠")
+   
 with st.container():
     tab2.write("this is tab 2")
+
 with st.container():
     tab3.write("this is tab 2")
 with st.container():
