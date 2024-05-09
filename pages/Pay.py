@@ -69,5 +69,8 @@ css="""
     }
 </style>
 """
-st.write(css, unsafe_allow_html=True)       
+st.write(css, unsafe_allow_html=True)
+clickedd = st.button(":arrow_right: للخلف")
+if clickedd:
+    st.switch_page("pages/home.py")
 
