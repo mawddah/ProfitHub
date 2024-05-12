@@ -51,6 +51,7 @@ with col1:
     clicked = st.button("ادفع ←")
 if clicked:
     st.switch_page("pages/Pay.py")
+
 with col2:
     st.info("الاشتراك الشهري")
     st.metric("SAR", "40")

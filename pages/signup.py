@@ -40,9 +40,6 @@ with st.container():
     st.markdown('##')
   
 
-    # Big text header
-    
-
     # Form for user input
     with st.form(key='profile_form'):
         st.markdown('<div class="big-font">انشاء حساب</div>', unsafe_allow_html=True)

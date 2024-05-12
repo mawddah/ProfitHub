@@ -57,16 +57,12 @@ with st.container():
     st.markdown('##')
   
 
-    # Big text header
-    
-
     # Form for user input
     with st.form(key='profile_form'):
         st.markdown('####')
         st.markdown('<div class="big-font">تسجيل الدخول</div>', unsafe_allow_html=True)
         st.markdown('##')
         username = st.text_input('اسم المستخدم')
-        
         password = st.text_input('كلمة المرور', type='password')
         
         
