@@ -1,8 +1,5 @@
 import streamlit as st
-from st_pages import Page, show_pages
-
-
-        
+from st_pages import Page, show_pages     
 # Custom CSS to inject for styling the interface
 st.markdown("""
 <style>
@@ -12,14 +9,12 @@ html {
 .main {
 background-color: #020606;
 }
-
 img{
     width: 1000px;
     object-fit: fill;
     height: 150px;}
 p{
     font-size:1.6rem !important;
-
 }
 .big-font {
     font-size:2.5rem !important;
@@ -35,8 +30,6 @@ p{
 }
 </style>
 """, unsafe_allow_html=True)
-
-
 show_pages(
     [
         Page("ProfitHub.py", "تسجيل الدخول", ":bust_in_silhouette:"),
@@ -55,17 +48,13 @@ show_pages(
 with st.container():
     st.image("images/logo.png")
     st.markdown('##')
-  
-
     # Form for user input
     with st.form(key='profile_form'):
         st.markdown('####')
         st.markdown('<div class="big-font">تسجيل الدخول</div>', unsafe_allow_html=True)
         st.markdown('##')
         username = st.text_input('اسم المستخدم')
-        password = st.text_input('كلمة المرور', type='password')
-        
-        
+        password = st.text_input('كلمة المرور', type='password')      
         # Button for submission
         st.markdown('##')
         submit_button = st.form_submit_button(label="تسجيل الدخول")
@@ -96,10 +85,7 @@ css="""
 </style>
 """
 st.write(css, unsafe_allow_html=True)
-
 #Handling the form submission
 if submit_button:
      st.success("تم انشاء حساب بنجاح!")
      st.switch_page("pages/webPage.py")
-        
-    
